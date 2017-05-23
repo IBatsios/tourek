@@ -4,8 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-	overflow: hidden;
-	background-image: url("../img/headshots/background.png");
+	background-image: url("../img/headshots/large_background.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 }
@@ -39,6 +38,11 @@ ul li a {
 	display: block;
 	text-decoration: none;
 	border-bottom: 1px solid rgba(0,0,0,.2)
+}
+
+ul li a:hover {
+	background-color: #abc8d3;
+	color: #000;
 }
 
 .sidebarBtn {
@@ -107,15 +111,15 @@ ul li a {
 	width: 33%;
 	height: 33%;
 	margin-left: 100px;
-	transition: transform 0.3s ease;
+	transition: .3s ease;
 }
 
-.content.toggle span {
-	transform: translate3d(300px, 0, 0);
+.content.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
 }
-.content.toggle span:before {
-	transform: translate3d(300px, 0, 0);
+
+.lname {
+	color: #abc8d3;
 }
-.content.toggle span:after {
-	transform: translate3d(300px, 0, 0);
-}
+

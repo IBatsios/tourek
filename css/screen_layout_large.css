@@ -6,7 +6,7 @@ body {
 	font-family: 'Lato', sans-serif;
 	background-image: url("../img/headshots/large_background.png");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 }
 
 .sidebar {
@@ -112,6 +112,15 @@ ul li a:hover {
 	height: 33%;
 	margin-left: 100px;
 	transition: .3s ease;
+	overflow-y: visible;
+	float: left;
+}
+
+@media screen and (max-width: 1023px){
+	.content {
+		width: 65%;
+		background-color: rgba(0,0,0,0.5);
+	}
 }
 
 .content.toggle {
@@ -119,7 +128,49 @@ ul li a:hover {
 	transition: .3s ease;
 }
 
+h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    font-weight: bold;
+}
+
+.fname {
+	color: #e8f9ff;
+}
+
 .lname {
 	color: #abc8d3;
 }
 
+.sag {
+	color: #D3C0AB;
+}
+
+.video {
+	padding: 13% 5% 5% 8%;
+	transition: .3s ease;
+}
+
+.video.toggle {
+	padding: 150px 5% 5% 0%;
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+.videowrapper {
+    clear: both;
+    position: relative;
+    padding-bottom: 50%;
+   
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

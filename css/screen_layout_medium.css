@@ -46,3 +46,24 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.photos {
+	width:90%; 
+	margin: 0px auto; 
+	padding-top: 50px;
+	text-align: center;
+	margin-left: 100px;	
+	margin-top: 150px;
+	transition: .3s ease;
+}
+
+img {
+	padding-top: 15px;
+	vertical-align: top;
+	width: 80%;
+}
+
+.photos.toggle {
+	margin-left: 250px;
+	transition: .3s ease;
+}

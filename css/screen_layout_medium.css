@@ -4,13 +4,24 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Lato', sans-serif;
-	background-image: url("../img/headshots/medium_background.png");
+	background-color: #000;
+}
+
+.container {
+	width: 888px;
+	height: 1010px;
+	background-image: url("../img/headshots/large_background.png");
 	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container_imageless {
+	background-image: none;
 }
 
 .content {
 	color: #fff;
-	width: 75%;
+	width: 40%;
 	margin-left: 100px;
 	transition: .3s ease;
 	overflow-y: visible;
@@ -23,12 +34,12 @@ body {
 }
 
 .video {
-	padding: 20% 5% 5% 11%;
+	padding: 175px 5% 5% 11%;
 	transition: .3s ease;
 }
 
 .video.toggle {
-	padding: 150px 5% 5% 0%;
+	padding: 175px 5% 5% 0%;
 	margin-left: 350px;
 	transition: .3s ease;
 }

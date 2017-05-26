@@ -10,7 +10,7 @@ body {
 .container {
 	width: 1920px;
 	height: 1010px;
-	background-image: url("../img/headshots/large_background.png");
+	background-image: url("../img/headshots/large_background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -210,6 +210,12 @@ img {
 .resume_downloads {
 	clear: both;
 	margin-left: 100px;
+	transition: .3s ease;
+}
+
+.resume_downloads.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
 }
 
 .resume_downloads a {
@@ -222,9 +228,31 @@ img {
 	color: #ABC8D3;
 }
 
-table {
-	color: #fff;
+.resume_downloads_decoration {
 	clear: both;
+	margin-left: 40%;
+	transition: .3s ease;
+}
+
+.resume_downloads_decoration.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+.resume_downloads_decoration a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.resume_downloads_decoration a:hover {
+	text-decoration: underline;
+	color: #ABC8D3;
+}
+
+table {
+	color: #000;
+	clear: both;
+	background-color: #fff;
 	width: 85%;
 	margin: 50px 50px 0px 100px;
 	border: 1px solid rgba(96,124,134,1);
@@ -237,6 +265,7 @@ table.toggle {
 }
 
 table caption {
+	color: #fff;
 	height: 50px;
 	font-size: 40px;
 	text-align: left;
@@ -244,15 +273,72 @@ table caption {
 	padding-left: 5px;
 }
 
-table tr:nth-child(odd) {
-	background-color: #866D52;
-}
-
-table tr:nth-child(even) {
-	background-color: #E8F9FF;
-	color: black;
-}
-
 .table-right {
 	text-align: right;
 }
+
+td {
+	width: 33%;
+}
+
+.films {
+	clear: both;
+	margin-left: 100px;
+	transition: .3s ease;
+}
+
+.films.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+ul.filmorder {
+	display: inline-block;
+	float: left;
+	width: 95%
+}
+
+li.filmlist {
+	text-decoration: none;
+	margin: 10px 0px 50px;
+	width: 400px;
+	height: 350px;
+	float: left;
+	text-align: center;
+}
+
+h3 {
+	color: #607C86;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+h4.title {
+	margin: 0;
+	padding: 0;
+	color: #E8F9FF;
+
+}
+
+h4.title a {
+	color: #866D52;
+}
+
+h4.title_aless {
+	height: 15px;
+	color: #e8f9ff;
+}
+
+h4.title a:hover {
+	text-decoration: underline;
+	background-color: #000;
+	color: #e8f9ff;
+}
+
+h5 {
+	color: #E8F9FF;
+	margin: 0;
+	padding: 0;
+}
+

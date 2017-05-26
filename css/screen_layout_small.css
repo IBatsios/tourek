@@ -11,7 +11,6 @@ body {
 .container {
 	width: 500px;
 	height: 1010px;
-	background-image: url("../img/headshots/large_background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 }

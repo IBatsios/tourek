@@ -185,26 +185,9 @@ h2 {
     width: 100%;
     height: 100%;
 }
-
-.photos {
-	width:90%; 
-	margin: 0px auto; 
-	padding-top: 20px;
-	text-align: center;
-	clear: both;
-	margin-left: 100px;	
-	margin-top: 50px;
-	transition: .3s ease;
-}
-
-img {
+img.headshots {
 	vertical-align: top;
 	width: 33%;
-}
-
-.photos.toggle {
-	margin-left: 350px;
-	transition: .3s ease;
 }
 
 .resume_downloads {
@@ -281,6 +264,8 @@ td {
 	width: 33%;
 }
 
+/* Film Here*/
+
 .films {
 	clear: both;
 	margin-left: 100px;
@@ -348,17 +333,61 @@ h5 {
 	margin: 0;
 	padding: 0;
 }
+/*Photo gallery here*/
 
-.photo_gallery {
+.gallery_title {
 	clear: both;
-	margin-left: 100px;
+	width: 100%;
 	transition: .3s ease;
+	font-size: 35px;
+	text-align: center;
 }
 
-.photo_gallery.toggle {
+.gallery_title.toggle {
 	margin-left: 350px;
 	transition: .3s ease;
 }
+
+a.title {
+	text-decoration: none;
+	color: #E8F9FF;
+}
+
+a.title:hover {
+	text-decoration: underline;
+	color: #ABC8D3;
+}
+
+.photos {
+	clear: both;
+	margin-left: 100px;
+	width: 100%;
+	transition: .3s ease;
+}
+
+.photos.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+ul.ul_photos {
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+li.photolist {
+	text-decoration: none;
+	width: 500px;
+	float: left;
+	padding: 10px 20px 10px 0;
+}
+
+img.gallery {
+	width: 100%;
+}
+
+/*Contact page here*/
 
 .contact {
 	clear: both;

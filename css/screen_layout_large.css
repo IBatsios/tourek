@@ -295,14 +295,15 @@ td {
 ul.filmorder {
 	display: inline-block;
 	float: left;
-	width: 95%
+	width: 100%;
 }
 
 li.filmlist {
 	text-decoration: none;
 	margin: 10px 0px 50px;
-	width: 400px;
-	height: 350px;
+	padding: 0 5% 0 0;
+	width: 500px;
+	height: 300px;
 	float: left;
 	text-align: center;
 }
@@ -312,6 +313,12 @@ h3 {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+}
+
+h3.about {
+	text-align: left;
+	color: #fff;
+	margin-top: 25px;
 }
 
 h4.title {
@@ -342,3 +349,32 @@ h5 {
 	padding: 0;
 }
 
+.photo_gallery {
+	clear: both;
+	margin-left: 100px;
+	transition: .3s ease;
+}
+
+.photo_gallery.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+.contact {
+	clear: both;
+	margin-left: 100px;
+	transition: .3s ease;
+}
+
+.contact.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+ul.ul_contact {
+	text-decoration: none;
+}
+
+li.li_contact {
+	text-decoration: none;
+}

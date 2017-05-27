@@ -33,6 +33,7 @@
 				$('.sidebar').toggleClass('active');
 				$('.sidebarBtn').toggleClass('toggle');
 				$('.content').toggleClass('toggle');
+				$('.contact').toggleClass('toggle');
 			})
 		})
 	</script>
@@ -61,10 +62,13 @@
 		<div class="content">
 			<h1 class="name"><span class="fname">Michael</span> <span class="lname">TOUREK</span></h1>
 			<h2 class="sag">SAG-AFTRA, A.E.A</h2>
-			<h3 class="about">About Me</h3>
-			<p>Spicy jalapeno bacon ipsum dolor amet tenderloin jerky prosciutto, cow swine jowl chicken doner bacon strip steak sausage boudin hamburger. Boudin jowl porchetta strip steak doner shankle cow, venison burgdoggen. Brisket pork chop spare ribs ham hock pig. Shoulder pork chop corned beef filet mignon turducken drumstick fatback short loin. Swine pig brisket venison ground round chuck doner turducken bresaola. Fatback meatloaf hamburger, picanha ham hock shankle salami ribeye kielbasa cupim flank venison.</p>
-			<p>Ham hock ribeye burgdoggen, tri-tip pig doner tail ground round pork loin venison jerky bacon. Chicken ground round fatback, landjaeger pig pancetta tri-tip venison prosciutto. T-bone cupim andouille tri-tip, short ribs ground round ham. Jerky pastrami bresaola, chuck pork pancetta ribeye venison tongue.</p>
-			<p>Porchetta picanha chuck burgdoggen tenderloin landjaeger cow salami jerky t-bone shoulder shank pastrami. Corned beef hamburger landjaeger t-bone shank. Rump pork chop biltong burgdoggen kielbasa, ham hock shankle tail frankfurter. Shank prosciutto andouille alcatra porchetta meatloaf, pork filet mignon bresaola jowl. Tri-tip sausage tail flank shoulder ball tip. Ribeye bacon short loin tri-tip cow jowl kevin alcatra fatback doner burgdoggen bresaola shankle corned beef.</p>
+		</div>
+		<div class="contact">
+			<ul class="ul_contact">
+				<li class="li_contact"><a href="#">For Southeastern Representation Click Here</a></li>
+				<li class="li_contact"><a href="#">For New York and LA Representation Click Here</a></li>
+				<li class="li_contact"><a href="#">To Contact Directly Click Here</a></li>
+			</ul>
 		</div>
 	</div>
 </body>

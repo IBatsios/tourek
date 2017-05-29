@@ -9,6 +9,7 @@ body {
 }
 
 .container {
+	width: 888px;
 	height: 1010px;
 	background-image: url("../img/headshots/medium_background.jpg");
 	background-repeat: no-repeat;
@@ -16,6 +17,7 @@ body {
 }
 
 .container_imageless {
+	width: 80%;
 	background-image: none;
 }
 
@@ -66,8 +68,33 @@ body {
 	transition: .3s ease;
 }
 
+/* Thumbnails styles */
+.thumbnails {
+	clear: both;
+	margin: 0 -15px 0 100px;
+	width: 95%;
+	transition: .3s ease;
+}
+
+.thumbnails.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+.thumbnails a {
+	float: left;
+	width: 50%;
+	padding-right: 25px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+
+.thumbnails img {
+	display: block;
+
+}
+
 img {
-	padding-top: 15px;
 	vertical-align: top;
 	width: 80%;
 }

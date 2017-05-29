@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+	width: 500px;
 	height: 1010px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -37,8 +38,38 @@ body {
 	transition: .3s ease;
 }
 
+/*Thumbnail styles */
+
+.thumbnails {
+	clear: both;
+	margin: 0 -15px 0 100px;
+	width: 95%;
+	transition: .3s ease;
+}
+
+.thumbnails.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+.thumbnails a {
+	float: left;
+	width: 100%;
+	padding-right: 25px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+
+.thumbnails img {
+	display: block;
+
+}
+
+.gallery_title {
+	text-align: right;
+}
+
 img {
-	padding-top: 15px;
 	vertical-align: top;
 	width: 80%;
 }

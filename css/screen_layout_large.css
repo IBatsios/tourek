@@ -358,16 +358,36 @@ a.title:hover {
 	color: #ABC8D3;
 }
 
-.photos {
+/* Thumbnail styles */
+
+.thumbnails {
 	clear: both;
-	margin-left: 100px;
-	width: 100%;
+	margin: 0 -15px 0 100px;
+	width: 95%;
 	transition: .3s ease;
 }
 
-.photos.toggle {
+.thumbnails.toggle {
 	margin-left: 350px;
 	transition: .3s ease;
+}
+
+.thumbnails a {
+	float: left;
+	width: 33%;
+	padding-right: 25px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+
+.thumbnails img {
+	display: block;
+
+}
+
+img {
+	max-width: 100%;
+	height: auto;
 }
 
 ul.ul_photos {
@@ -386,6 +406,18 @@ li.photolist {
 img.gallery {
 	width: 100%;
 }
+
+/*the Modal goes here*/
+.photo_pop:hover {
+	text-decoration: none;
+	background-color: rgba(0,0,0,0);
+}
+
+a.photo_pop:hover {
+	opacity: .8;
+	transform: scale(1.05);
+}
+
 
 /*Contact page here*/
 
@@ -407,3 +439,5 @@ ul.ul_contact {
 li.li_contact {
 	text-decoration: none;
 }
+
+

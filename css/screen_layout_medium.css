@@ -35,6 +35,28 @@ body {
 	transition: .3s ease;
 }
 
+/* Headshot styling */
+
+.headshots {
+	clear: all;
+	float: left;
+	transition: .3s ease;
+	margin-left: 100px;
+}
+
+.headshots.toggle {
+	margin-left: 350px;
+	transform: .3s ease;
+}
+
+.headshots a {
+	float: left;
+	width: 50%;
+	padding-right: 25px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+
 .video {
 	padding: 175px 5% 5% 11%;
 	transition: .3s ease;
@@ -58,14 +80,6 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-.photos {
-	width:90%; 
-	margin: 0px auto; 
-	text-align: center;
-	margin-left: 100px;	
-	transition: .3s ease;
 }
 
 /* Thumbnails styles */

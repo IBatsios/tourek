@@ -38,6 +38,28 @@ body {
 	transition: .3s ease;
 }
 
+/* Headshot styling */
+
+.headshots {
+	clear: all;
+	float: left;
+	transition: .3s ease;
+	margin-left: 100px;
+}
+
+.headshots.toggle {
+	margin-left: 350px;
+	transform: .3s ease;
+}
+
+.headshots a {
+	float: left;
+	width: 100%;
+	padding-right: 25px;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+}
+
 /*Thumbnail styles */
 
 .thumbnails {

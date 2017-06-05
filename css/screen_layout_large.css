@@ -26,7 +26,7 @@ body {
 	background: #262626;
 	width: 250px;
 	height: 100%;
-	transition: .3s;
+	transition: .3s ease;
 }
 
 .active {
@@ -116,15 +116,17 @@ ul li a:hover {
 	transform: rotate(-45deg);
 }
 
+/* Content Styles */
+
 .content {
 	color: #fff;
 	width: 33%;
-	height: 33%;
 	margin-left: 100px;
 	transition: .3s ease;
 	overflow-y: visible;
 	float: left;
 	padding-bottom: 50px;
+	background-color: #000;
 }
 
 @media screen and (max-width: 1023px){
@@ -353,7 +355,121 @@ h5 {
 	margin: 0;
 	padding: 0;
 }
+
+/* Gallery navigation styles */
+
+#top-nav {
+	float: left;
+	clear: both;
+	margin-left: 100px;
+	transition: .3s ease;
+}
+
+#top-nav.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+#top-nav ul {
+	text-decoration: none;
+	padding: 0px;
+}
+
+#top-nav li a{
+	padding: 10px;
+	font-size: 20px;
+
+}
+
+/* Animating the gallery links here 
+
+.box1 {
+	position: relative;
+	animation: mymove 5s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box2 {
+	position: relative;
+	animation: mymove 10s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box3 {
+	position: relative;
+	animation: mymove 15s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box4 {
+	position: relative;
+	animation: mymove 20s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box5 {
+	position: relative;
+	animation: mymove 20s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box6 {
+	position: relative;
+	animation: mymove 20s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box7 {
+	position: relative;
+	animation: mymove 20s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.box8 {
+	position: relative;
+	animation: mymove 20s;
+}
+
+@keyframes mymove {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+*/
+
 /*Photo gallery here*/
+
+.background {
+	background-color: #866D52;
+}
 
 .gallery_title {
 	clear: both;
@@ -371,12 +487,52 @@ h5 {
 
 a.title {
 	text-decoration: none;
-	color: #E8F9FF;
+	color: #ABC8D3;
 }
 
 a.title:hover {
 	text-decoration: underline;
-	color: #ABC8D3;
+	color: #E8F9FF;
+}
+
+#ocp {
+	display: none;
+	float: right;
+}
+
+#outsiders {
+	display: none;
+	float: right;
+}
+
+#resurrection {
+	display: none;
+	float: right;
+}
+
+#utd {
+	display: none;
+	float: right;
+}
+
+#banshee {
+	display: none;
+	float: right;
+}
+
+#hollers {
+	display: none;
+	float: right;
+}
+
+#dockery {
+	display: none;
+	float: right;
+}
+
+#lid {
+	display: none;
+	float: right;
 }
 
 /* Thumbnail styles */
@@ -434,6 +590,22 @@ li.photolist {
 	width: 500px;
 	float: left;
 	padding: 10px 20px 10px 0;
+}
+
+.notification-bar {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #333;
+	color: white;
+	text-align: center;	
+	padding: 20px;
+}
+
+.notification-bar a {
+	color: #fc3;
 }
 
 /*Contact page here*/

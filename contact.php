@@ -34,9 +34,12 @@
 				$('.sidebarBtn').toggleClass('toggle');
 				$('.content').toggleClass('toggle');
 				$('.contact').toggleClass('toggle');
+				$('#top-nav').toggleClass('toggle');
+				$('.form-container').toggleClass('toggle');
 			})
 		})
 	</script>
+	<script type="text/javascript" src="js/display.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -63,13 +66,49 @@
 			<h1 class="name"><span class="fname">Michael</span> <span class="lname">TOUREK</span></h1>
 			<h2 class="sag">SAG-AFTRA, A.E.A</h2>
 		</div>
-		<div class="contact">
-			<ul class="ul_contact">
-				<li class="li_contact"><a href="#">For Southeastern Representation Click Here</a></li>
-				<li class="li_contact"><a href="#">For New York and LA Representation Click Here</a></li>
-				<li class="li_contact"><a href="#">To Contact Directly Click Here</a></li>
+		<div id="top-nav">
+			<ul>
+				<li><a href="#southeastern" class="box1" onclick="getSouth()">For Southeastern Representation Click Here</a></li>
+				<li><a href="#newyork" class="box2" onclick="getNY()">For New York and LA Representation Click Here</a></li>
+				<li><a href="#direct" class="box3" onclick="getDirect()">To Contact Directly Click Here</a></li>
 			</ul>
 		</div>
+		<div class="form-container" id="southeastern">
+            <div class="contact-form">
+            	<h1>Southeastern</h1>
+                <form id="contact-us" method="post" action="#">
+                    <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                    <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                    <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                	<textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                	<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="form-container" id="newyork">
+            <div class="contact-form">
+            <h1>New York | LA</h1>
+                <form id="contact-us" method="post" action="#">
+                    <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                    <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                    <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                	<textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                	<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="form-container" id="direct">
+            <div class="contact-form">
+            <h1>Direct Contact</h1>
+                <form id="contact-us" method="post" action="#">
+                    <input type="text" name="name" id="name" required="required" class="form" placeholder="Name" />
+                    <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Email" />
+                    <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" />
+                	<textarea name="message" id="message" class="form textarea"  placeholder="Message"></textarea>
+                	<button type="submit" id="submit" name="submit" class="form-btn semibold">Send Message</button>
+                </form>
+            </div>
+        </div>
 	</div>
 </body>
 </html>

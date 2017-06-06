@@ -96,3 +96,21 @@ function hideAll() {
 	document.getElementById("dockery").style.display = "none";
 	document.getElementById("lid").style.display = "none";
 }
+
+function getSouth() {
+	document.getElementById("southeastern").style.display = "inline";
+	document.getElementById("newyork").style.display = "none";
+	document.getElementById("direct").style.display = "none";
+}
+
+function getNY() {
+	document.getElementById("southeastern").style.display = "none";
+	document.getElementById("newyork").style.display = "inline";
+	document.getElementById("direct").style.display = "none";
+}
+
+function getDirect() {
+	document.getElementById("southeastern").style.display = "none";
+	document.getElementById("newyork").style.display = "none";
+	document.getElementById("direct").style.display = "inline";
+}

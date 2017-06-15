@@ -26,14 +26,12 @@ $mail->isHTML(true);
  * Send an email
  */
 
-$from = $_POST['name'];
-$email = $_POST['mail'];
-$subject = $_POST['subject'];
-$body = $_POST['message'];
-$mail->setFrom($email, $from);
-$mail->addAddress('ioannisbatsios@gmail.com');
-$mail->Subject = $subject;
-$mail->Body = $body;
+$mail->From = $_POST['sender'];
+$mail->FromName = $_POST['name'];
+$mail->Subject = $_POST['subject'];
+$mail->Body = $_POST['message'] . " message is from " .  $_POST['sender'];
+$mail->addAddress('yanni3003@yahoo.com');
+$mail->AddReplyTo($_POST['sender'], $_POST['name']);
 
 if ($mail->send()) {
 	header('Location: thanks.html');

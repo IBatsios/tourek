@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 /**
  * Include external classes
  */
@@ -21,6 +22,7 @@ $mail->Password = Config::SMTP_PASSWORD;
 $mail->SMTPSecure = 'tls';
 $mail->CharSet = 'UTF-8';
 $mail->isHTML(true);
+$mail->SMTPDebug = 2;
 
 /**
  * Send an email
@@ -34,7 +36,7 @@ $mail->addAddress('yanni3003@yahoo.com');
 $mail->AddReplyTo($_POST['sender'], $_POST['name']);
 
 if ($mail->send()) {
-	header('Location: thanks.html');
+	echo "<script type='text/javascript'>document.location.href='thanks.html';</script>";
 } else {
     echo 'Mailer error: ' . $mail->ErrorInfo;
-}
+}++-------------------------------------------------

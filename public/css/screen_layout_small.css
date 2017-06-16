@@ -1,33 +1,14 @@
 @charset "UTF-8";
 
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato', sans-serif;
-	background-image: none;
-	background-color: #000;
-	width: 500px;
-}
-
 .container {
-	width: 500px;
-	height: 1010px;
+	width: 70vw;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-image: none;
 }
 
 .container_imageless {
-	background-image: none;
-}
-
-.content {
-	color: #fff;
-	width: 50%;
-	margin-left: 100px;
-	padding-right: 8%;
-	transition: .3s ease;
-	overflow-y: visible;
-	float: left;
+	width: 70vw;
 }
 
 .photos {
@@ -36,6 +17,10 @@ body {
 	text-align: center;
 	margin-left: 100px;	
 	transition: .3s ease;
+}
+
+table {
+	margin-left: 25px;
 }
 
 /* Headshot styling */
@@ -102,5 +87,50 @@ img {
 }
 
 .video {
-	padding: 175px 5% 5% 11%;
+	margin: 0;
+	padding: 50px 0 0 25px;
+	transition: .3s ease;
+}
+
+.video.toggle {
+	padding: 175px 5% 5% 0%;
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+.films {
+	margin-left: 25px;
+}
+
+li.filmlist {
+	width: 70vw;
+	height: auto;
+	float: left;
+	text-align: center;
+	padding: 0;
+}
+
+.content {
+	width: 50vw;
+}
+
+.form-container {
+	width: 100%;
+}
+
+.container-form {
+	width: 90vw;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+.contact-form h1 {
+	width: 80%;
+}
+
+.form {
+	width: 75%;
 }

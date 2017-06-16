@@ -101,16 +101,19 @@ function getSouth() {
 	document.getElementById("southeastern").style.display = "inline";
 	document.getElementById("newyork").style.display = "none";
 	document.getElementById("direct").style.display = "none";
+	document.getElementById("hr").style.display = "inline";
 }
 
 function getNY() {
 	document.getElementById("southeastern").style.display = "none";
 	document.getElementById("newyork").style.display = "inline";
 	document.getElementById("direct").style.display = "none";
+	document.getElementById("hr").style.display = "inline";
 }
 
 function getDirect() {
 	document.getElementById("southeastern").style.display = "none";
 	document.getElementById("newyork").style.display = "none";
 	document.getElementById("direct").style.display = "inline";
+	document.getElementById("hr").style.display = "inline";
 }

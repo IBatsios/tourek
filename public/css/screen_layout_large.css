@@ -131,7 +131,7 @@ ul li a:hover {
 
 @media screen and (max-width: 1023px){
 	.content {
-		width: 40%;
+		width: 100%;
 		background-color: rgba(0,0,0,0.5);
 	}
 }
@@ -188,7 +188,8 @@ h2 {
 /* Video styles */
 
 .video {
-	padding: 175px 5% 5% 8%;
+	margin: 0;
+	padding: 175px 150px 0;
 	transition: .3s ease;
 }
 
@@ -257,8 +258,8 @@ h2 {
 table {
 	color: #000;
 	clear: both;
+	width: 85vw;
 	background-color: #fff;
-	width: 85%;
 	margin: 50px 50px 0px 100px;
 	border: 1px solid rgba(96,124,134,1);
 	transition: .3s ease;
@@ -627,7 +628,20 @@ li.photolist {
 	width: 53%;
 	text-align: center;
 	font-family: 'Lato', sans-serif;
-	border-top: 1px solid #fff;
+}
+
+#hr {
+	clear: all;
+	float: left;
+	width: 80%;
+	margin-left: 100px;
+	display: none;
+	transition: .3s ease;
+}
+
+#hr.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
 }
 
 /* Input Styles */

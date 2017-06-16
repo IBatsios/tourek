@@ -58,7 +58,8 @@ body {
 }
 
 .video {
-	padding: 175px 5% 5% 11%;
+	margin: 0;
+	padding: 175px 150px 0;
 	transition: .3s ease;
 }
 
@@ -116,4 +117,13 @@ img {
 .photos.toggle {
 	margin-left: 250px;
 	transition: .3s ease;
+}
+
+li.filmlist {
+	text-decoration: none;
+	width: 400px;
+	height: auto;
+	height: auto;
+	float: left;
+	text-align: center;
 }

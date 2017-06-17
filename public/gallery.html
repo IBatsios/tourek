@@ -24,6 +24,7 @@
 	<link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (min-width:1px) and (max-width:533px)" href="css/screen_layout_small.css" />
 	<link rel="stylesheet" type="text/css" media="screen and (min-width:534px) and (max-width:888px)" href="css/screen_layout_medium.css" />
+	<link rel="stylesheet" type="text/css" href="css/lightbox.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato|Slabo+27px" rel="stylesheet">
 <!-- Javascipt for navigation toggle ============================================================ -->	
 	<script  src="https://code.jquery.com/jquery-3.2.1.js"></script>
@@ -42,7 +43,7 @@
 	<script type="text/javascript" src="js/lightbox.min.js"></script>
 </head>
 <body>
-	<div id="top-body" class="container_imageless">
+	<div id="top-body">
 	<div class="sidebar">
 		<ul>
 			<li><a href="index.html">Home</a></li>
@@ -67,17 +68,18 @@
 		<h2 class="sag">SAG-AFTRA, A.E.A</h2>
 	</div>
 	<div id="top-nav">
-		<ul>
-			<li><a href="#ocp" class="box1" onclick="getOCP()">Office Christmas Party</a></li>
-			<li><a href="#outsiders" class="box2" onclick="getOutsiders()">Outsiders</a></li>
-			<li><a href="#resurrection" class="box3" onclick="getResurrection()">Resurrection</a></li>
-			<li><a href="#utd" class="box4" onclick="getUTD()">Under the Dome</a></li>
-			<li><a href="#banshee" class="box5" onclick="getBanshee()">Banshee</a></li>
-			<li><a href="#hollers" class="box6" onclick="getHollers()">The Hollers</a></li>
-			<li><a href="#dockery" class="box7" onclick="getDockery()">Martin Dockery</a></li>
-			<li><a href="#lid" class="box8" onclick="getLID()">Love is Dead: The Musical</a></li>
-		</ul>
+		<div class="nav-tn group">
+			<a href="#ocp" class="box1" onclick="getOCP()"><img class="gallery-tn" src="img/thumbs/ocp.png" alt="Image from film Office Christmas Party"><h3>Office Christmas Party</h3></a>
+			<a href="#outsiders" class="box2" onclick="getOutsiders()"><img class="gallery-tn" src="img/thumbs/outsiders.png" alt="Image from television series Outsiders"><h3>Outsiders</h3></a>
+			<a href="#resurrection" class="box3" onclick="getResurrection()"><img class="gallery-tn" src="img/thumbs/resurrection.png" alt="Image from television series Resurrection"><h3> Resurrection</h3></a>
+			<a href="#utd" class="box4" onclick="getUTD()"><img class="gallery-tn" src="img/thumbs/utd.png" alt="Image from television series Under the Dome"><h3>Under the Dome</h3></a>
+			<a href="#banshee" class="box5" onclick="getBanshee()"><img class="gallery-tn" src="img/thumbs/banshee.png" alt="Image from Cinemax series Banshee"><h3>Banshee</h3></a>
+			<a href="#hollers" class="box6" onclick="getHollers()"><img class="gallery-tn" src="img/thumbs/hollers.png" alt="Image from the short film The Hollers"><h3>The Hollers</h3></a>
+			<a href="#dockery" class="box7" onclick="getDockery()"><img class="gallery-tn" src="img/thumbs/dockery.png" alt="Image from the short film The Adventures of Martin Dockery"><h3>Martin Dockery</h3></a>
+			<a href="#lid" class="box8" onclick="getLID()"><img class="gallery-tn" src="img/thumbs/lid.png" alt="Image from the short film Love is Dead: The Musical"><h3>Love is Dead: The Musical</h3></a>
+		</div>
 	</div>
+	<div class="id-wrapper">
 	<div id="ocp">
 		<div class="gallery_title">
 			<a class="title" href="#top-body" onclick="hideAll()">Office Christmas Party</a>
@@ -249,6 +251,7 @@
 			<a class="photo_pop" data-lightbox="lid_gallery" data-title="Image from the short film Love is Dead: The Musical" href="img/gallery/lid/lid_14.jpg"><img class="gallery" src="img/gallery/lid/lid_14.jpg" alt="Image from the short film Love is Dead: The Musical"></a>
 			<a class="photo_pop" data-lightbox="lid_gallery" data-title="Image from the short film Love is Dead: The Musical" href="img/gallery/lid/lid_16.jpg"><img class="gallery" src="img/gallery/lid/lid_16.jpg" alt="Image from the short film Love is Dead: The Musical"></a>
 		</div>
+	</div>
 	</div>
 	</div>
 </body>

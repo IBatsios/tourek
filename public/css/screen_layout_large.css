@@ -120,13 +120,16 @@ ul li a:hover {
 
 .content {
 	color: #fff;
-	width: 33%;
 	margin-left: 100px;
 	transition: .3s ease;
 	overflow-y: visible;
 	float: left;
 	padding-bottom: 50px;
 	background-color: #000;
+}
+
+.content p {
+
 }
 
 @media screen and (max-width: 1023px){
@@ -166,7 +169,6 @@ h2 {
 /* Headshot styling */
 
 .headshots {
-	clear: all;
 	float: left;
 	transition: .3s ease;
 	margin-left: 100px;
@@ -357,11 +359,16 @@ h5 {
 	padding: 0;
 }
 
+.film-tn {
+	width: 300px;
+	height: auto;
+}
+
 /* Gallery navigation styles */
 
 #top-nav {
-	float: left;
 	clear: both;
+	width: 490px;
 	margin-left: 100px;
 	transition: .3s ease;
 }
@@ -371,15 +378,35 @@ h5 {
 	transition: .3s ease;
 }
 
-#top-nav ul {
-	text-decoration: none;
-	padding: 0px;
-}
-
-#top-nav li a{
+#top-nav a {
 	padding: 10px;
 	font-size: 20px;
+	text-decoration: none;
+}
 
+.nav-tn:hover img {
+	opacity: .6;
+	transform: scale(.92);
+}
+
+.nav-tn img:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.nav-tn a {
+	float: left;
+	width: 33%;
+	height: auto;
+	box-sizing: border-box;
+}
+
+#top-nav h3 {
+	color: #e8f9ff;
+}
+
+.gallery-tn {
+	border: 2px solid #e8f9ff;
 }
 
 /* Animating the gallery links here 
@@ -559,12 +586,21 @@ a.title:hover {
 }
 
 .thumbnails a:hover {
-	opacity: .8;
 	transform: scale(1.05);
+}
+
+.thumbnails:hover img {
+	opacity: .5;
+}
+
+.thumbnails img:hover {
+	opacity: 1;
 }
 
 .thumbnails img {
 	display: block;
+	width: 100%;
+	height: auto;
 }
 
 img {
@@ -631,9 +667,9 @@ li.photolist {
 }
 
 #hr {
-	clear: all;
+	clear: both;
 	float: left;
-	width: 80%;
+	width: 490px;
 	margin-left: 100px;
 	display: none;
 	transition: .3s ease;

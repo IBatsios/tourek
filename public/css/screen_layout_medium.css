@@ -38,8 +38,6 @@ body {
 /* Headshot styling */
 
 .headshots {
-	clear: all;
-	float: left;
 	transition: .3s ease;
 	margin-left: 100px;
 }
@@ -51,7 +49,7 @@ body {
 
 .headshots a {
 	float: left;
-	width: 50%;
+	width: 100%;
 	padding-right: 25px;
 	box-sizing: border-box;
 	margin-bottom: 25px;
@@ -106,7 +104,8 @@ body {
 
 .thumbnails img {
 	display: block;
-
+	width: 100%;
+	height: auto;
 }
 
 img {
@@ -126,4 +125,18 @@ li.filmlist {
 	height: auto;
 	float: left;
 	text-align: center;
+}
+
+#hr {
+	width: 433px;
+}
+
+.nav-tn a {
+	float: left;
+	width: 100%;
+	height: auto;
+}
+
+#top-nav {
+	width: 450px;
 }

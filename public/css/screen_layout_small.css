@@ -30,7 +30,7 @@ table {
 	clear: all;
 	float: left;
 	transition: .3s ease;
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .headshots.toggle {
@@ -116,6 +116,11 @@ li.filmlist {
 
 .content {
 	width: 75vw;
+	background-color: #000;
+}
+
+.content p {
+	margin-left: -50px;
 }
 
 #top-nav {
@@ -127,18 +132,18 @@ li.filmlist {
 }
 
 .form-container {
-	max-width: 70vw;
+	max-width: 65vw;
 }
 
 .form-container h1 {
-	font-size: 25px;
+	font-size: 22px;
 }
 input[type=email], input[type=text] {
-	width: 300px;
+	width: 270px;
 }
 
 .textarea {
-	width: 300px;
+	width: 270px;
 }
 
 .nav-tn a {
@@ -151,4 +156,19 @@ input[type=email], input[type=text] {
 	max-width: 75vw;
 }
 
+.contact-page {
+	margin-left: -50px;
+}
 
+.videowrapper {
+	margin-left: -50px;
+}
+
+.resume_downloads_decoration {
+	margin-left: 50px;
+}
+
+.nav-tn {
+	margin-left: -50px;
+	padding-right: 50px;
+}

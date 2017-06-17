@@ -10,7 +10,7 @@ body {
 
 .container {
 	width: 888px;
-	height: 1010px;
+	height: 1200px;
 	background-image: url("../img/headshots/medium_background.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -27,6 +27,7 @@ body {
 	margin-left: 100px;
 	transition: .3s ease;
 	overflow-y: visible;
+	background-color: rgba(10%, 10%, 10%,.3);
 }
 
 .content.toggle {
@@ -139,4 +140,10 @@ li.filmlist {
 
 #top-nav {
 	width: 450px;
+}
+
+#top-nav-gallery a {
+	width: 45%;
+	float: left;
+	height: auto;
 }

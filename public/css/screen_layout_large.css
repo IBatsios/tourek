@@ -8,11 +8,12 @@ body {
 }
 
 .container {
-	width: 1920px;
-	height: 1010px;
+	width: 100%;
+	height: 1080px;
+	overflow: hidden;
 	background-image: url("../img/headshots/large_background.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% auto;
 }
 
 .container_imageless {
@@ -119,24 +120,14 @@ ul li a:hover {
 /* Content Styles */
 
 .content {
+	width: 40%;
 	color: #fff;
 	margin-left: 100px;
 	transition: .3s ease;
 	overflow-y: visible;
 	float: left;
 	padding-bottom: 50px;
-	background-color: #000;
-}
-
-.content p {
-
-}
-
-@media screen and (max-width: 1023px){
-	.content {
-		width: 100%;
-		background-color: rgba(0,0,0,0.5);
-	}
+	background-color: rgba(10%, 10%, 10%,.3);
 }
 
 .content.toggle {
@@ -379,6 +370,23 @@ h5 {
 }
 
 #top-nav a {
+	padding: 10px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+#top-nav-gallery {
+	clear: both;
+	margin-left: 100px;
+	transition: .3s ease;
+}
+
+#top-nav-gallery.toggle {
+	margin-left: 350px;
+	transition: .3s ease;
+}
+
+#top-nav-gallery a {
 	padding: 10px;
 	font-size: 20px;
 	text-decoration: none;

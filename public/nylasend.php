@@ -31,7 +31,7 @@ $mail->From = $_POST['sender'];
 $mail->FromName = $_POST['name'];
 $mail->Subject = $_POST['subject'];
 $mail->Body = "<h4>". $_POST['message'] . "</h4>" . "<br/><p><em>This message generated from michaeltourek.com and the sender's email is " .  $_POST['sender'] . "</em></p>";
-$mail->addCC('yanni3003@yahoo.com', 'ioannisbatsios@gmail.com');
+$mail->addCC(/*insert agent's email here*/'');
 $mail->AddReplyTo($_POST['sender'], $_POST['name']);
 
 if ($mail->send()) {

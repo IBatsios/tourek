@@ -34,5 +34,5 @@ class Config
      *
      * @var string
      */
-    const SMTP_PASSWORD = 'J50266u@YW2PUVHSwWk8';
+    const SMTP_PASSWORD = '';
 }
